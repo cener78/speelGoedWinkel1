@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda Toys|Oyuncak Hobby Hediyelik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/oyuncak.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <header>
+    <ul class="clock" id="clock">
+      <li>22</li>
+      <li>:</li>
+      <li>25</li>
+    </ul>
+
+  </header>
+  <body>
+    <nav id="navbar2" class="navbar navbar-light ">
+      <div class="container-fluid" id="containerId">
+        <a class="navbar-brand"> <img src="assets/img/logo.png" alt=""></a>
+        <form class="d-none d-xl-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="sepet-btn">
+            <div class="input-group ">
+                
+                <input type="text" class="form-control d-none  d-md-inline" placeholder="Sepetiniz Bos" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                <button class="btn btn-outline-success btnsepet" type="button" id="button-addon11" ><i style="font-size:1.4rem" class="fa-solid fa-basket-shopping"></i></button>
+              </div>
+          <div class="sepet" id="sepet" >
+            <div >
+              
+              
+            </div>
+           
+            <div class="odeme">
+              <span class="spn"></span>
+            <ul>
+                <li id="aratpl">Ara Toplam &nbsp: <span id="ben"></span> TL</li>
+                <li id="kdv">KDV &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <span></span>  TL      </li>
+                <hr>
+                <li id="tpl">Toplam &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <span></span> TL</li>
+            </ul>
+            <button type="button" class=" gizli1 btn btn-success "><a style="text-decoration: none;color: aliceblue;"href="#cardsId" >Devam Et</a> </button>
+            <button type="button" class="gizli2 btn btn-success "> <a style="text-decoration: none;color: aliceblue;"href="https://www.ing.nl/particulier/index.html" target="_blank" onclick="sepetKapa()">Odeme Yap</a> </button>
+           <button type="button" class="acik btn btn-success "> <a href="#cardsId" style="text-decoration: none;color: aliceblue;">Alisverise Basla</a></button>
+          </div>
+          </div>
+        </div>
+       
+    </nav>
+    <nav id="navbar1"class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container-fluid">
+     
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Oyuncak
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Bebek</a></li>
+                  <li><a class="dropdown-item" href="#">Araba</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Lego</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Anne-Baba</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kirtasiye</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kitap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Elektronik</a>
+              </li>
+            
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div id="crs-inr" class="carousel-item active">
+          <img
+            src="assets/img/red-toy-car-with-christmas-tree-it-bunch-gifts-christmas-tree-background.jpg"
+            class="d-block w-100 "
+            alt="..."
+          />
+          <button id="incelebtn"class="btn btn-warning btn-lg"><i class="fa-solid fa-magnifying-glass"></i>&nbspHemen Incele</button>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>EN SEVILEN OYUNCAKLARDA SEPETTE INDIRIM</h5>
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda? Totam, esse fuga aut, quos cupiditate mollitia accusamus illum id dolor consequatur velit necessitatibus dignissimos, soluta reprehenderit rerum error nesciunt!
+            </p>
+            
+          </div>
+          
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img/building-blocks-wooden-background-colorful-wooden-building-blocks.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>COCUKLARIN DUNYASI RENKLENSIN</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, excepturi id. Tempore voluptatem distinctio vel esse enim possimus a eius similique itaque quam eligendi ullam minus, aut molestias sint saepe?</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span
+          style="color: black"
+          class="carousel-control-prev-icon"
+          aria-hidden="true"
+        ></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </section> 
+  
+   
+      
+<div id="cardsId"class="cards  ">
+  
+  <div class="card" style="width: 19rem;">
+    <img src="https://images.pexels.com/photos/635467/pexels-photo-635467.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="1" class="card-title d-none d-sm-flex">Card title</h5>
+      <p id="1a"class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a id="1ab"  class="btnad btn  btn-warning btn-lg" >Sepete Ekle</a>
+    </div>
+  </div>
+  <div class="card " style="width: 19rem;">
+    <img src="https://images.pexels.com/photos/6219105/pexels-photo-6219105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="2" class="card-title d-none d-sm-flex">Card title</h5>
+      <p id="2a" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a  class="btnad btn  btn-warning btn-lg" >Sepete Ekle</a>
+    </div>
+  </div>
+  <div class="card  " style="width: 19rem;">
+    <img src="https://images.pexels.com/photos/9227241/pexels-photo-9227241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="3" class="card-title d-none d-sm-flex">Card title</h5>
+      <p id="3a" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a  class="btnad btn  btn-warning btn-lg">Sepete Ekle</a>
+    </div>
+  </div>
+  <div class="card " style="width: 19rem;">
+    <img src="https://images.pexels.com/photos/1842182/pexels-photo-1842182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 id="4" class="card-title d-none d-sm-flex">Card title</h5>
+      <p id="4a" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a  class="btnad btn  btn-warning btn-lg">Sepete Ekle</a>
+    </div>
+    
+  
+</div>
+
+</div>
+
+
+
+    
+
+    <script src="assets/js/oyuncak.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
